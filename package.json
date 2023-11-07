@@ -1,0 +1,30 @@
+{
+  "name": "ludi",
+  "version": "0.3.0",
+  "author": "John Susek <ludi@johnsolo.net>",
+  "repository": {
+    "url": "http://github.com/johnsusek/ludi"
+  },
+  "bin": {
+    "ludi": "dist/index.js"
+  },
+  "files": [
+    "dist/*.js"
+  ],
+  "scripts": {
+    "build": "ncc build src/cli.ts",
+    "test": "tsx tests/run.ts"
+  },
+  "keywords": [
+    "heapsio",
+    "haxe"
+  ],
+  "license": "MIT",
+  "devDependencies": {
+    "unexpected": "^12.0.5"
+  },
+  "dependencies": {
+    "nodemon": "^3.0.1",
+    "tsx": "^3.14.0"
+  }
+}
